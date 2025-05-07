@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Veritas Wealth Fellowship (VWF)</title>
+  <style>
+    /* Reset and base */
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      line-height: 1.6;
+      background: #f9f9f9;
+      color: #333;
+    }
+    a {
+      color: #2a7a2a;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    header, footer {
+      background-color: #2a7a2a;
+      color: white;
+      padding: 1rem 2rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+    nav {
+      margin-top: 0.5rem;
+    }
+    nav a {
+      margin-right: 1.5rem;
+      font-weight: 600; 
+      color: white; 
+      
+    }
+    main {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    section {
+      margin-bottom: 3rem;
+      background: white;
+      padding: 2rem;
+      border-radius: 6px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #2a7a2a;
+      margin-top: 0;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+      color: white;
+      padding: 4rem 2rem;
+      text-align: center;
+      border-radius: 6px;
+      box-shadow: inset 0 0 0 1000px rgba(42, 122, 42, 0.7);
+    }
+    .hero h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+    }
+    .hero p {
+      font-size: 1.3rem;
+      margin-bottom: 1.5rem;
+    }
+    .btn-primary {
+      background-color: #4caf50;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+    .btn-primary:hover {
+      background-color: #3b7a3b;
+    }
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: space-between;
+    }
+    .service-card {
+      flex: 1 1 300px;
+      background: #e6f0e6;
+      padding: 1.5rem;
+      border-radius: 6px;
+      box-shadow: 0 0 6px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .service-card h3 {
+      margin-top: 0;
+      color: #2a7a2a;
+    }
+    .service-card p {
+      flex-grow: 1;
+    }
+    .service-card button {
+      margin-top: 1rem;
+      align-self: flex-start;
+    }
+    /* Forms */
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+    }
+    label {
+      margin: 0.5rem 0 0.2rem;
+      font-weight: 600;
+    }
+    input, textarea, select {
+      padding: 0.5rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    input[type="submit"] {
+      margin-top: 1rem;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+      padding: 0.75rem;
+    }
+    input[type="submit"]:hover {
+      background-color: #3b7a3b;
+    }
+    /* Responsive */
+    @media (max-width: 700px) {
+      .services {
+        flex-direction: column;
+      }
+    }
+    /* Footer */
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+    }
+    /* Blog list */
+    .blog-list {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    .blog-list li {
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Veritas Wealth Fellowship (VWF)</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#our-work">Our Work</a>
+      <a href="#transparency">Transparency</a>
+      <a href="#get-involved">Get Involved</a>
+      <a href="#blog">Blog & Resources</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero" role="banner" aria-label="Hero section">
+      <h1>Ending Usury, Empowering Christians</h1>
+      <p>Protecting and growing financial wealth for Christians through Biblically rooted, interest-free solutions.</p>
+      <button class="btn-primary" onclick="document.getElementById('get-involved').scrollIntoView({behavior:'smooth'})">Join the Movement</button>
+    </section>
+
+    <section id="our-work" aria-labelledby="our-work-title">
+      <h2 id="our-work-title">Our Work</h2>
+      <div class="services">
+        <article class="service-card" aria-labelledby="loan-title">
+          <h3 id="loan-title">Interest-Free Loans</h3>
+          <p>Veritas Wealth Fellowship is a social movement which seeks to eliminate usury across the United States. VWF seeks to empower local communities by offering interest-free loans to businesses and individuals. Whether you're a business owner who needs additional funding for a business venture or expansion, or a student who's looking for alternatives to the traditional student-loan system to pay for education, or whether one is looking to build up their credit-score through a small loan amount, VWF offers a number of usury-free loan programs to qualifying individuals</p>
+          <p><strong>Eligibility:</strong> insert eligibility requirements here </p>
+          <blockquote>"VWF’s loan helped me start my business debt-free." – Sarah, TX</blockquote>
+          <button class="btn-primary" onclick="alert('Contact us at info@veritaswealth.org for loan applications.')">Apply Now</button>
+        </article>
+
+        <article class="service-card" aria-labelledby="wealth-builder-title">
+          <h3 id="wealth-builder-title">Christian Wealth Builder Program</h3>
+          <p>Our Veritas Wealth Fellowship offers members the  opportunity to radically change their communities while growing their wealth. The Christian Wealth Builder Program allows members to donate a specific amount of money to the VWF, over a given time interval. With these generous donations, VWF will invest within the general community using Chrisitan-based wealth management principles. As a benefit of membership, members of the CWBP are then entitled to share the risk/reward of investing within one's community.    </p>
+          <p>Grow your wealth in alignment with Scripture, such as Proverbs 22:7.</p>
+          <button class="btn-primary" onclick="alert('Learn more about the Wealth Builder Program by contacting info@veritaswealth.org')">Learn More</button>
+        </article>
+
+        <article class="service-card" aria-labelledby="outreach-title">
+          <h3 id="outreach-title">Financial Outreach Programs</h3>
+          <p>VWF believes that education programs are critical to the continued success of Chrisitans across the USA. VWF teaches the essentials of money management, investing and business management.</p>
+          <p><strong>Impact:</strong> Help us educate 10,000+ families in 2025!</p>
+          <button class="btn-primary" onclick="alert('Register for upcoming workshops at info@veritaswealth.org')">Register</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="transparency" aria-labelledby="transparency-title">
+      <h2 id="transparency-title">Financial Transparency</h2>
+      <p>We believe in full accountability. Here’s how your donations are allocated:</p>
+      <ul>
+        <li><strong>85%</strong> Programs and Services</li>
+        <li><strong>10%</strong> Operations</li>
+        <li><strong>5%</strong> Fundraising</li>
+      </ul>
+      <p><a href="#" onclick="alert('Annual reports and IRS Form 990 coming soon!')">Download Annual Reports & IRS Form 990</a></p>
+    </section>
+
+    <section id="get-involved" aria-labelledby="get-involved-title">
+      <h2 id="get-involved-title">Get Involved</h2>
+
+      <article aria-labelledby="donate-title">
+        <h3 id="donate-title">Donate</h3>
+        <p>Your tax-deductible donations help us continue our mission.</p>
+        <form onsubmit="event.preventDefault(); alert('Thank you for your donation!');">
+          <label for="donation-amount">Donation Amount (USD):</label>
+          <select id="donation-amount" name="donation-amount" required>
+            <option value="" disabled selected>Select amount</option>
+            <option value="25">$25</option>
+            <option value="50">$50</option>
+            <option value="100">$100</option>
+            <option value="250">$250</option>
+            <option value="500">$500</option>
+            <option value="other">Other</option>
+          </select>
+          <label for="donor-email">Email:</label>
+          <input type="email" id="donor-email" name="donor-email" placeholder="you@example.com" required />
+          <input type="submit" value="Donate" />
+        </form>
+      </article>
+
+      <article aria-labelledby="volunteer-title" style="margin-top: 2rem;">
+        <h3 id="volunteer-title">Volunteer</h3>
+        <p>Join us as a financial coach, event organizer, or outreach partner.</p>
+        <form onsubmit="event.preventDefault(); alert('Thank you for volunteering! We will contact you soon.');">
+          <label for="volunteer-name">Full Name:</label>
+          <input type="text" id="volunteer-name" name="volunteer-name" placeholder="Your Name" required />
+          <label for="volunteer-email">Email:</label>
+          <input type="email" id="volunteer-email" name="volunteer-email" placeholder="you@example.com" required />
+          <label for="volunteer-skills">Skills/Interests:</label>
+          <textarea id="volunteer-skills" name="volunteer-skills" rows="3" placeholder="e.g. Financial coaching, event planning"></textarea>
+          <input type="submit" value="Sign Up" />
+        </form>
+      </article>
+
+      <article aria-labelledby="partnerships-title" style="margin-top: 2rem;">
+        <h3 id="partnerships-title">Partnerships</h3>
+        <p>We partner with churches and employers to expand our impact.</p>
+        <form onsubmit="event.preventDefault(); alert('Thank you for your interest! We will reach out soon.');">
+          <label for="partner-name">Organization Name:</label>
+          <input type="text" id="partner-name" name="partner-name" placeholder="Church or Employer Name" required />
+          <label for="partner-contact">Contact Email:</label>
+          <input type="email" id="partner-contact" name="partner-contact" placeholder="contact@example.com" required />
+          <input type="submit" value="Contact Us" />
+        </form>
+      </article>
+    </section>
+
+    <section id="blog" aria-labelledby="blog-title">
+      <h2 id="blog-title">Blog & Resources</h2>
+      <ul class="blog-list">
+        <li><a href="#" onclick="alert('Read: 5 Biblical Principles for Debt-Free Living')">5 Biblical Principles for Debt-Free Living</a></li>
+        <li><a href="#" onclick="alert('Read: Usury in Modern America')">Usury in Modern America</a></li>
+        <li><a href="#" onclick="alert('Download: Christian Family Budget Template')">Download: Christian Family Budget Template</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Veritas Wealth Fellowship. All rights reserved.</p>
+    <p>Contact us: <a href="mailto:info@veritaswealth.org">info@veritaswealth.org</a></p>
+  </footer>
+</body>
+</html>
