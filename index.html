@@ -244,32 +244,54 @@
         </form>
       </article>
 
-      <article aria-labelledby="volunteer-title" style="margin-top: 2rem;">
-        <h3 id="volunteer-title">Volunteer</h3>
-        <p>Join us as a financial coach, event organizer, or outreach partner.</p>
-        <form onsubmit="event.preventDefault(); alert('Thank you for volunteering! We will contact you soon.');">
-          <label for="volunteer-name">Full Name:</label>
-          <input type="text" id="volunteer-name" name="volunteer-name" placeholder="Your Name" required />
-          <label for="volunteer-email">Email:</label>
-          <input type="email" id="volunteer-email" name="volunteer-email" placeholder="you@example.com" required />
-          <label for="volunteer-skills">Skills/Interests:</label>
-          <textarea id="volunteer-skills" name="volunteer-skills" rows="3" placeholder="e.g. Financial coaching, event planning"></textarea>
-          <input type="submit" value="Sign Up" />
-        </form>
-      </article>
+  
 
-      <article aria-labelledby="partnerships-title" style="margin-top: 2rem;">
-        <h3 id="partnerships-title">Partnerships</h3>
-        <p>We partner with churches and employers to expand our impact.</p>
-        <form onsubmit="event.preventDefault(); alert('Thank you for your interest! We will reach out soon.');">
-          <label for="partner-name">Organization Name:</label>
-          <input type="text" id="partner-name" name="partner-name" placeholder="Church or Employer Name" required />
-          <label for="partner-contact">Contact Email:</label>
-          <input type="email" id="partner-contact" name="partner-contact" placeholder="contact@example.com" required />
-          <input type="submit" value="Contact Us" />
-        </form>
-      </article>
+<form action="https://formspree.io/f/xgvkykwy" method="POST">
+
+<article aria-labelledby="volunteer-title" style="margin-top: 2rem;">
+  <h3 id="volunteer-title">Volunteer</h3>
+  <p>Join us as a financial coach, event organizer, or outreach partner.</p>
+  <form action="https://formspree.io/f/yourformid" method="POST">
+    <label for="volunteer-name">Full Name:</label> <br>
+    <input type="text" id="volunteer-name" name="name" placeholder="Your Name" required /><br>
+
+    <label for="volunteer-email">Email:</label><br>
+    <input type="email" id="volunteer-email" name="email" placeholder="you@example.com" required /><br>
+
+    <label for="volunteer-skills">Skills/Interests:</label><br>
+    <textarea id="volunteer-skills" name="skills" rows="3" placeholder="e.g. Financial coaching, event planning"></textarea>
+
+    <input type="submit" value="Sign Up" />
+  </form>
+</article>
+
+
+<form action="https://formspree.io/f/xgvkykwy" method="POST">
+<article aria-labelledby="partnerships-title" style="margin-top: 2rem;">
+  <h3 id="volunteer-title">Partnerships</h3>
+  <p>VWF partner's with churches and employers to expand our impact. If you would like to know more information, please don't hesitate to reach out to us.</p>
+  <form action="https://formspree.io/f/yourformid" method="POST">
+    <label for="volunteer-name">Organization Name:</label> <br>
+    <input type="text" id="volunteer-name" name="name" placeholder="Your Name" required /><br>
+
+    <label for="volunteer-email">Email:</label><br>
+    <input type="email" id="volunteer-email" name="email" placeholder="you@example.com" required /><br>
+    <input type="submit" value="Sign Up" />
+  </form>
+</article>
+
+
+
+
+
     </section>
+
+
+
+
+
+
+
 
     <section id="blog" aria-labelledby="blog-title">
       <h2 id="blog-title">Blog & Resources</h2>
@@ -287,3 +309,4 @@
   </footer>
 </body>
 </html>
+
